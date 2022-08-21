@@ -1,4 +1,4 @@
-# AWS nfrastructure setup with Terraform
+# AWS Infrastructure setup with Terraform
 This project will create a VCP with Internet Gateway, and subnets across 2 AZs:
 Private subnets can connect to the internet via a NAT gateway created as part of the VPC.
 
