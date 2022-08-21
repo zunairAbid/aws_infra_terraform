@@ -1,21 +1,14 @@
 # AWS Infrastructure setup with Terraform
-This project will create a VCP with Internet Gateway, and subnets across 2 AZs:
-Private subnets can connect to the internet via a NAT gateway created as part of the VPC.
+This project will create a Virtual Private Cloud (VPC) with Internet Gateway (IGW), and subnets across two Availability Zones (AZs). Public Subnets can communicate with the internet via IGW and Private subnets can connect to the internet via a NAT gateway created as part of the VPC. 
 
-The ec2 instance in the public subnet is assigned a security group with access from the 
-the internet via port 22 (for ssh).
+One EC2 instance has been provisioned in the public subnet and is assigned a security group with access from the internet via port 22 (for SSH). 
 
-RDS cluster (Aurora MySQL), reachable from the internal network, and ec2 can connect RDS Cluster (Aurora MySQL) instance via port 3306. 
+RDS cluster (Aurora MySQL), reachable from the internal network, and EC2 can connect RDS Cluster (Aurora MySQL) instance via port 3306. 
 
-Both securities groups Instance and RDS are dynamically created in the security group(sgs) module.
+Both securities groups Instance and RDS are dynamically created in the security group(sgs) module. AWS S3 bucket is used for storing sensitive data. 
 
-s3 bucket is used for storing sensitive data.
- 
-Create IAM user and attach inline policies for providing access to AWS S3 bucket and get credentials from Secret Manager/Parameter Store
+Create IAM user and attach inline policies for providing access to AWS S3 bucket, Secret Manager/Parameter Store.
 
-An SSH key pair is dynamically generated as well, and the existing public key is copied over to the EC2 Web Server Instance.
-
-Terraform will deploy the Ec2 instance in the public subnet and the RDS instance in the private subnet. Both ec2 and RDS can communicate with each other via private IP.
 
 
 ## Current state
