@@ -41,7 +41,7 @@ Namespace | The project namespace to use for unique resource naming.
 
 ## Deployment 
 
-To deploy terraform infrastructure below commonds should be useful for Stage Environment.
+To deploy terraform infrastructure below commands should be useful for Stage Environment.
 
     step 1:
      - terraform init                     # Initializing terraform
