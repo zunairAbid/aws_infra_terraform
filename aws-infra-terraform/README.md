@@ -20,13 +20,14 @@ Terraform will deploy the Ec2 instance in the public subnet and the RDS instance
 
 ## Current state
 
-Modules:
-    - networking: Sets up a VPC with IGWs, NAT GWs, 2 public subnets, and 2 private subnets.
-	- ec2:  Creates an ec2 instance in a public subnet each subnet is in a different AZ
-	- s3:    Creates an s3 bucket with encryption.
-	- iam: Create an IAM User and attach Inline Policies ( S3, Secret Manager, Parameter Store) 
-	- rds:  Creates rds aurora MySQL cluster and adds 1 instance.
-	- sgs:  Define security groups for Ec2 instance public and RDS private
+Modules
+
+1) networking: Sets up a VPC with IGWs, NAT GWs, 2 public subnets, and 2 private subnets.
+2) ec2: Creates an ec2 instance in a public subnet each subnet is in a different AZ
+3) s3:  Creates an s3 bucket with encryption.
+4) iam: Create an IAM User and attach Inline Policies ( S3, Secret Manager, Parameter Store) 
+5) rds: Creates rds aurora MySQL cluster and adds 1 instance.
+6) sgs: Define security groups for Ec2 instance public and RDS private
 
 ## Inputs
 
