@@ -11,7 +11,7 @@ Create IAM user and attach inline policies for providing access to AWS S3 bucket
 
 
 
-## Current state
+## Current states
 
 Modules
 
