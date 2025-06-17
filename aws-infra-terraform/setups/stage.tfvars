@@ -25,7 +25,7 @@ s3 = {
 iam = {
   ssm_parameter_name_prefix = "dev"
   ssm_parameter_region= "us-east-1"
-  account_id= "249144947172"
+  account_id= "249144900172"
   secret_manager_name_prefix = "stag"
   secret_manager_region= "us-east-1"
 }
@@ -40,5 +40,5 @@ rds = {
   count                     = 1
   instance_class            = "db.t3.medium"
   publicly_accessible       = false
-  database_name             = "netsol"
+  database_name             = "stage_db"
 }
