@@ -19,14 +19,14 @@ ec2 = {
 
 s3 = {
   acl    = "private"
-  bucket_name = "onboard-app-prod-s3data-us-east-2-249144947172"
+  bucket_name = "onboard-app-prod-s3data-us-east-2-249144900172"
 }
 
 iam = {
   ssm_parameter_name_prefix = "dev"
   ssm_parameter_region= "us-east-1"
-  account_id= "249144947172"
-  secret_manager_name_prefix = "stag"
+  account_id= "249144900172"
+  secret_manager_name_prefix = "prod"
   secret_manager_region= "us-east-1"
 }
 
@@ -40,5 +40,5 @@ rds = {
   count                     = 1
   instance_class            = "db.t3.medium"
   publicly_accessible       = false
-  database_name             = "netsolprod"
+  database_name             = "prod_db"
 }
