@@ -9,6 +9,9 @@ Both securities groups Instance and RDS are dynamically created in the security 
 
 Create IAM user and attach inline policies for providing access to AWS S3 bucket, Secret Manager/Parameter Store.
 
+## Architecture_diagram
+
+![image](https://github.com/user-attachments/assets/e3ba2463-ae83-4f41-84cd-878e80e56658)
 
 
 ## Current states
